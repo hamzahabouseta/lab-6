@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="niceSurvey.css">
+
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+
+  <body>
+
+	<div class="container-md  my-3  bg-muted text-dark" id="survey">
+    <h1 class="display-4 text-center">Getting To Know You Survey</h1>
+    <br>
+    <form>
+      <h2 class="font-weight-normal lead "> What fruits(s) do you like? </h2>
+      I like:<br>
+      <input class="form-group" type="text" name="fruit" placeholder="fruit name..." required />
+      <br>
+      <br>
+      <h2 class="font-weight-normal lead"> What color(s) do you like? </h2>
+	    I like:<br>
+		  <input type="checkbox" name="color" value="Red"> Red<br>
+		  <input type="checkbox" name="color" value="Green"> Green<br>
+      <input type="checkbox" name="color" value="Blue"> Blue<br>
+      <br>
+        <br>
+      <h2 class="font-weight-normal lead">What is your favorite animal?</h2>
+      I like:<br>
+      <select class="form-group" name="animal">
+			  <option value="Cat" selected="selected">Cat</option>
+			  <option value="Dog">Dog</option>
+			  <option value="Turtle">Turtle</option>
+      </select>
+      <br>
+        <br>
+      <h2 class="font-weight-normal lead">What is your favorite cereal?</h2>
+      I like: <br>
+      <input class="form-group" name="cereal" type="radio" value="Nesquik"> Nesquik <br>
+      <input class="form-group" name="cereal" type="radio" value="Cheerios"> Cheerios <br>
+      <input class="form-group" name="cereal" type="radio" value="Corn Flakes"> Corn Flakes <br>
+      <br>
+      <h2 class="font-weight-normal lead">How old are you?</h2>
+     I am: <br>
+     <input class="form-group lead" required name="age" type="number" > years old<br>
+     <br>
+      <h2 class="font-weight-normal lead">When is your Birthday?</h2>
+      My Birthday is: <br>
+      <input class="form-group" required name="birthday" type="date" > <br>
+      <br>
+
+      <br>
+      <button type="submit" class="btn btn-info" id="bb">Submit</button>
+      <p id="thank you"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html>
